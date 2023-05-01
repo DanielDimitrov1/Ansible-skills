@@ -14,24 +14,15 @@ The course has covered the following topics:
   - Establish Connection to Remote Clients;
   - Check Remote Clients Connectivity;
   - Copy Files to Remote Clients;
-
-• Change File Permissions
-
-• Setup Apache and Open Firewall Port
-
-• Run Shell Scripts on Remote Clients
-
-• Schedule a job (crontab)
-
-• User Account Management
-
-• Add or Update User Password
-
-• Download Package from a URL
-
-• Kill a Running Process
-
-• Pick and Choose Steps
+  - Change File Permissions;
+  - Setup Apache and Open Firewall Port;
+  - Run Shell Scripts on Remote Clients;
+  - Schedule a job (crontab);
+  - User Account Management;
+  - Add or Update User Password;
+  - Download Package from a URL;
+  - Kill a Running Process;
+  - Pick and Choose Steps.
 
 
 **Managing Variables & Facts in Ansible**
