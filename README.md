@@ -4,8 +4,6 @@ The course has covered the following topics:
 - Automating Linux Administration Tasks;
 - Deploying Files to Managed Hosts;
 - Handling Task Failures;
-- Deploying Custom files with Jinja2 Templates
-
 
 **Implementing Playbooks**
 
@@ -35,5 +33,9 @@ The course has covered the following topics:
 - Debugging;
 - Using check mode as a Testing Tool;
 - check_mode;
-- Guided Exercise;
-- Last Lecture
+
+**Deploying Custom files with Jinja2 Templates**
+
+- Overview of Jinja Templates;
+- Control Structure - using loops, variables;
+- Lab - for, loop.index variable, if else in Jinja2 Templates
