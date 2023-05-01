@@ -10,11 +10,10 @@ The course has covered the following topics:
 
 - Writing and running playbooks for installing and starting services
 
-• Remote Clients hosts File Syntax
-
-• Establish Connection to Remote Clients
-• Check Remote Clients Connectivity
-• Copy Files to Remote Clients
+  - Remote Clients hosts File Syntax;
+  - Establish Connection to Remote Clients;
+  - Check Remote Clients Connectivity;
+  - Copy Files to Remote Clients;
 
 • Change File Permissions
 
