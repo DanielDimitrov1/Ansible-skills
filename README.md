@@ -8,32 +8,23 @@ The course has covered the following topics:
 - Deploying Custom files with Jinja2 Templates
 
 
-Implementing Playbooks
+**Implementing Playbooks**
 
-Overview of Playbook Syntax
+- Overview of Playbook Syntax;
+- Writing and Running Playbooks;
+- Lab - Write a Simple Playbook, User Creation task;
+- Guided Exercise - Web Server Installation;
+- Guided Exercise - Multiple Tasks;
 
-Writing and Running Playbooks
+**Managing Variables & Facts in Ansible**
 
-Lab - Write a Simple Playbook, User Creation task
+- Overview of variables in Ansible;
+- Lab-Managing Variables;
+- Hosts & Group variables;
 
-Guided Exercise - Web Server Installation
+**Lab on Host & Group Variables**
 
-Guided Exercise - Multiple Tasks
-
-Managing Variables & Facts in Ansible
-
-Overview of variables in Ansible
-
-Lab-Managing Variables
-
-Hosts & Group variables
-
-Lab on Host & Group Variables
-
-Ansible Facts
-
-Managing Secrets
-
-Ansible Vault Command
-
-Lab - Edit, encrypt, decrypt, and view files
+- Ansible Facts;
+- Managing Secrets;
+- Ansible Vault Command;
+- Lab - Edit, encrypt, decrypt, and view files
