@@ -1,0 +1,22 @@
+---
+- name: Copy and edit test.txt file to remote hosts
+  hosts: all
+  become: true
+  gather_facts: yes
+
+  tasks:
+    - name: Copy test.txt file to remote hosts
+      copy: 
+        src: /home/daniel/udemy/ansible/task2/test.txt
+        dest: /root/abc.txt
+    - name: Edit lines in test.txt file
+      lineinfile:
+        path: /root/abc.txt
+        regexp: "{{ item.regexp }}"
+        line: "{{ item.line }}"
+      with_items:
+        - { regexp: '^HOST=', line: 'HOST={{ inventory_hostname }}' }
+        - { regexp: '^MEMORY=', line: 'MEMORY={{ ansible_memtotal_mb }} MB' }
+        - { regexp: '^BIOS=', line: 'BIOS={{ ansible_system_vendor }} {{ ansible_bios_version }}' }
+        - { regexp: '^VDA_DISK_SIZE=', line: 'VDA_DISK_SIZE={{ ansible_mounts[0].size_total | default("NONE") }}' }
+        - { regexp: '^VDB_DISK_SIZE=', line: 'VDB_DISK_SIZE={{ ansible_mounts[1].size_total | default("NONE") }}' }

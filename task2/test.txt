@@ -1,0 +1,5 @@
+HOST=Inventory Hostname
+MEMORY=Total Memory MB
+BIOS= Bios Version
+VDA_DISK_SIZE=disk size
+VDA_DISK_SIZE=disk size

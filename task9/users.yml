@@ -1,0 +1,34 @@
+---
+- name: Create users
+  hosts: all
+  vars_files:
+  - users_list.yml
+  - stat.yml
+
+  tasks:
+
+  - name: Create devops group nodes1
+    group:
+      name: devops
+    when: ('dev' in group_names)
+
+  - name: Create manager group nodes45
+    group:
+      name: manager
+    when: ('prod' in group_names)
+
+  - name: Create devs should happen on node1
+    user:
+      name: "{{ item.username }}"
+      groups: devops
+      password: "{{ pawd_dev | password_hash('sha512') }}"
+    when: ('dev' in group_names) and ('developers' in item.job)
+    loop: "{{ users }}"
+
+  - name: Create managers on node45
+    user:
+      name: "{{ idem.username }}"
+      groups: manager
+      password: "{{ pawd_mgr | password_hash('sha512')}}"
+    when: ('prod' in group_names) and ('manager' in item.job)
+    loop: "{{ users }}" 

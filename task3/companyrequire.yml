@@ -1,0 +1,22 @@
+---
+- name: Install svermaproxy-role and sverma-role
+  src: svermalinux.haproxy
+
+- name: sverma-role
+  src: svermalinux.php
+
+#  roles:
+#    - { role: svermaproxy-role, src: svermalinux.haproxy }
+#    - { role: svermaproxy-role, src: svermalinux.php }
+#    - { role: sverma-role }
+  
+#  roles:
+#    - name: svermaproxy-role
+#      src: svermalinux.haproxy
+#      state: present
+#      path: "{{ roles_dir }}"
+#    - name: sverma-role
+#      src: svermalinux.php
+#      state: present
+#      path: "{{ roles_dir }}"
+      

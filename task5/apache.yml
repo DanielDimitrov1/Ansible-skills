@@ -1,0 +1,6 @@
+---
+- name: http
+  hosts: prod
+  roles:
+    - new-apache
+

@@ -1,0 +1,7 @@
+---
+- name: Use the template
+  hosts: all
+  template:
+    src: server.j2
+    dest:/root/myhosts
+  when: "dev" in group_names

@@ -1,0 +1,20 @@
+---
+- name: Install the required packages
+  hosts: dev,test,webservers
+  become: true
+  
+  tasks:
+    - name: Install packages
+      yum:
+        name:
+        - httpd
+        - mod_ssl
+        - mariadb
+      state: present
+      when: "dev" in group_names
+    - name: Update all packages on dev node
+      yum:
+        name: '*'
+      state: latest
+      when: "dev" in group_names
+

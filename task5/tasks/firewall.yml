@@ -1,0 +1,4 @@
+#---
+#- name: Reload firewall
+#  firewalld:
+#    reload: yes

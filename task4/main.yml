@@ -1,0 +1,17 @@
+---
+- name: Install haproxy and php roles
+  hosts: all
+  vars:
+    haproxy_backend_servers:
+    - name: web1
+      address: node4.techstart.com 
+    - name: web2
+      address: node5.techstart.com
+
+  tasks:
+    - name: import haproxy
+      include_role: svermaproxy-role
+      when: "proxy" in group_names
+    - name: import php
+      include_role: sverma-role
+      when: "prod" in group_names

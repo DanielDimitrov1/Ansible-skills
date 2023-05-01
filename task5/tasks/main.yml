@@ -1,0 +1,26 @@
+--- 
+- name: Enable and start httpd
+  service:
+    name: httpd
+    state: started 
+    enabled: true
+
+- name: Enable and start firewall
+  service:
+    name: firewalld
+    state: started
+    enabled: true
+
+- name: Allow webserver service
+  firewalld:
+    service: http
+    permanent: yes
+    state: enabled
+    immediate: yes
+- name: Index
+  template:
+    src: /home/daniel/udemy/ansible/task5/templates/index.html.j2
+    dest: /var/www/html/index.html
+  notify:
+    - restart
+
