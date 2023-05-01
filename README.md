@@ -22,7 +22,7 @@ The course has covered the following topics:
 - Hosts & Group variables;
 - Lab on Host & Group Variables;
 - Ansible Facts;
-- 
+
 **Managing Secrets**
 - Ansible Vault Command;
 - Lab - Edit, encrypt, decrypt, and view files
