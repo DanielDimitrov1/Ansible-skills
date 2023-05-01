@@ -3,11 +3,10 @@ Here you can see my tasks done from the Udemy Course about ansible: https://www.
 The course has covered the following topics:
 - Automating Linux Administration Tasks;
 - Deploying Files to Managed Hosts;
-- Handling Task Failures;
+
 
 **Implementing Playbooks**
 
-- Overview of Playbook Syntax;
 - Writing and Running Playbooks;
 - Lab - Write a Simple Playbook, User Creation task;
 - Guided Exercise - Web Server Installation;
