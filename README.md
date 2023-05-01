@@ -28,3 +28,14 @@ The course has covered the following topics:
 - Managing Secrets;
 - Ansible Vault Command;
 - Lab - Edit, encrypt, decrypt, and view files
+
+**Troubleshooting Ansible**
+
+- Log Files for Ansible;
+- The Debug Module;
+- Managing Errors : --syntax-check, --step, --list-tasks, --start-at-tasks;
+- Debugging;
+- Using check mode as a Testing Tool;
+- check_mode;
+- Guided Exercise;
+- Last Lecture
