@@ -1,7 +1,6 @@
 Here you can see my tasks done from the Udemy Course about ansible: https://www.udemy.com/course/red-hat-system-administration-lll/
 
 The course has covered the following topics:
-- Managing Variables and Facts;
 - Automating Linux Administration Tasks;
 - Deploying Files to Managed Hosts;
 - Handling Task Failures;
@@ -21,11 +20,10 @@ The course has covered the following topics:
 - Overview of variables in Ansible;
 - Lab-Managing Variables;
 - Hosts & Group variables;
-
-**Lab on Host & Group Variables**
-
+- Lab on Host & Group Variables;
 - Ansible Facts;
-- Managing Secrets;
+- 
+**Managing Secrets**
 - Ansible Vault Command;
 - Lab - Edit, encrypt, decrypt, and view files
 
